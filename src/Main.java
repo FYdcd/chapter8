@@ -12,8 +12,6 @@ public class Main {
        Wizard w=new Wizard("スガワラ");
        System.out.println(w.hp);
        System.out.println(w.name);
-       w.heal(h1);
-       w.heal(h2);
-       w.heal(h2);
+
     }
 }
