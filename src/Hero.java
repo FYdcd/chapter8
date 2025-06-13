@@ -3,6 +3,9 @@ public class Hero {
     int hp;
     Sword sword;
 
+    public Hero(){
+        System.out.println("");
+    }
     public void sleep(){
         this.hp = 100;
         System.out.println(this.name + "は、眠って回復した！");
@@ -25,14 +28,5 @@ public class Hero {
     public void attack(){
         System.out.print(this.name+"は攻撃した！");
         System.out.print("敵に5ポイントのダメージを与えた！");
-    }
-
-    public Hero(String name){
-        this.hp=100;
-        this.name=name;
-    }
-    public Hero(){
-        this.hp=100;
-        this.name="ダミー";
     }
 }

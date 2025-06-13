@@ -1,4 +1,8 @@
 public class SuperHero extends Hero {
+    public SuperHero() {
+        super();
+        System.out.println("SuperHeroのコンストラクタが動作");
+    }
     boolean flying;
     //追加の処置
     public void fly() {
@@ -13,15 +17,6 @@ public class SuperHero extends Hero {
         System.out.println(this.name + "は撤退した");
     }
 
-    public void attack(Matango m) {
-        super.attack(m);//親クラスHeroのattackメソッドを呼び出す
-        if (this.flying) {
-            super.attack(m);//親クラスHeroのattackメソッドを呼び出す
-        }
-    }
-    public SuperHero() {
-        super();
-        System.out.println("SuperHeroのコンストラクタが動作");
-    }
+
 
 }
